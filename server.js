@@ -3,7 +3,7 @@ const path = require("path");
 const connectDB = require("./config/db");
 const app = express();
 const cors = require("cors");
-require.dotenv.config();
+require('dotenv').config()
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
