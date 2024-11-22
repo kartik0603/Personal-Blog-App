@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <link rel="stylesheet" href="/edit.css">
+    
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Edit Blog</h1>
+        <form id="edit-blog-form">
+            <div class="form-group">
+                <label for="blog-title">Blog Title:</label>
+                <input type="text" id="blog-title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-category">Category:</label>
+                <select id="blog-category" name="category" required>
+                    <option value="Technology">Technology</option>
+                    <option value="Health">Health</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Education">Education</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="blog-content">Content:</label>
+                <textarea id="blog-content" name="content" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn">Update Blog</button>
+            <button type="button" class="btn btn-cancel" onclick="window.location.href='/blog/all'">Cancel</button>
+        </form>
+    </div>
+
+    <script src="/js/edit.js"></script>
+</body>
+
+</html>

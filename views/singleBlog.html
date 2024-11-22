@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="blog-title">Blog Title</title>
+    <link rel="stylesheet" href="/singleBlog.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="blog" class="blog-container">
+            <img id="img" src="" alt="Blog Image" class="blog-image">
+            <h3 id="title"></h3>
+            <span id="category" class="blog-category">Category: </span>
+            <p id="content" class="blog-content"></p>
+
+            <button id="like" class="btn btn-like">Like</button>
+            <span id="count" class="like-count">0 Likes</span>
+
+            <form id="comment" class="comment-form">
+                <textarea id="commentText" class="comment-input" placeholder="Add a comment..." required></textarea>
+                <button type="submit" class="btn btn-comment">Submit</button>
+            </form>
+
+            <div class="comments-section">
+                <h4>Comments:</h4>
+                <ul id="commentsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/singleBlog.js"></script>
+</body>
+
+</html>
