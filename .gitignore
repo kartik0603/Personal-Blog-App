@@ -1,5 +1,5 @@
 node_modules
 test
 Instruction.md
-package-lock.json
+# package-lock.json
 .env
